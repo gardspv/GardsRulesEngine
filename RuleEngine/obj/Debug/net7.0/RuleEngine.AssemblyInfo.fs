@@ -14,4 +14,4 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyProductAttribute("RuleEngine")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("RuleEngine")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
-do()
+do ()

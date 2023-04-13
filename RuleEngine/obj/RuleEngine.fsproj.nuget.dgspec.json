@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\c624ga0\\Documents\\Code\\Test\\RuleEngine\\RuleEngine.fsproj": {}
+    "C:\\Users\\c624ga0\\Documents\\Code\\repos_to_admire\\GardsRulesEngine\\RuleEngine\\RuleEngine.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\c624ga0\\Documents\\Code\\Test\\RuleEngine\\RuleEngine.fsproj": {
+    "C:\\Users\\c624ga0\\Documents\\Code\\repos_to_admire\\GardsRulesEngine\\RuleEngine\\RuleEngine.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\c624ga0\\Documents\\Code\\Test\\RuleEngine\\RuleEngine.fsproj",
+        "projectUniqueName": "C:\\Users\\c624ga0\\Documents\\Code\\repos_to_admire\\GardsRulesEngine\\RuleEngine\\RuleEngine.fsproj",
         "projectName": "RuleEngine",
-        "projectPath": "C:\\Users\\c624ga0\\Documents\\Code\\Test\\RuleEngine\\RuleEngine.fsproj",
+        "projectPath": "C:\\Users\\c624ga0\\Documents\\Code\\repos_to_admire\\GardsRulesEngine\\RuleEngine\\RuleEngine.fsproj",
         "packagesPath": "C:\\Users\\c624ga0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\c624ga0\\Documents\\Code\\Test\\RuleEngine\\obj\\",
+        "outputPath": "C:\\Users\\c624ga0\\Documents\\Code\\repos_to_admire\\GardsRulesEngine\\RuleEngine\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\c624ga0\\AppData\\Roaming\\NuGet\\NuGet.Config",

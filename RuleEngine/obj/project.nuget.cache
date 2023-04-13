@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1DebNd/987SJfEFzuR6I7Z9DxmNNKpsIz8ia/pGnPa+PFoiRGqleMz0TdsyFsfCTgUBx42a1bhz6pYX5zKtSpA==",
+  "dgSpecHash": "LdXz+9eZeyhoioApRUsl31HehPVeKlintKWsffHzw7f5VSJ38C+PYFlhnDqZvxSjb0LVmeBAOFisvLjlkkcZgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\c624ga0\\Documents\\Code\\Test\\RuleEngine\\RuleEngine.fsproj",
+  "projectFilePath": "C:\\Users\\c624ga0\\Documents\\Code\\repos_to_admire\\GardsRulesEngine\\RuleEngine\\RuleEngine.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\c624ga0\\.nuget\\packages\\fsharp.core\\7.0.200\\fsharp.core.7.0.200.nupkg.sha512"
   ],
