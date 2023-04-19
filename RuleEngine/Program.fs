@@ -2,6 +2,7 @@
 
 open RuleEngine
 
+"""
 let testRuleEngineForBusinessObject =
     let businessObject =
         { Value = 16
@@ -59,9 +60,10 @@ let testRuleEngineForCat =
 
     let resultList = checkRulesForBusinessObject businessRules cat
     printfn "%A" resultList
+"""
 
 [<EntryPoint>]
 let main args =
-    testRuleEngineForBusinessObject
-    testRuleEngineForCat
+    //testRuleEngineForBusinessObject
+    //testRuleEngineForCat
     0

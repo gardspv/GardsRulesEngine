@@ -48,18 +48,18 @@ let createRuleResult ruleSetDescription ruleCriteria light =
     { RuleDescription = ruleSetDescription
       Light = light
       CriteriaViolated = ruleCriteria }
-    
-//Iterere gjennom listen, avslutte om en regel brytes
 
-let evaluate businessObject ruleSet =
-    let sortedRuleSet = List.sortWith trafficLightComparator ruleSet
-    
-    if ruleSet.RedLightRule.IsSome && ruleSet.RedLightRule.Value.Rule businessObject then
-        createRuleResult ruleSet.Description ruleSet.RedLightRule.Value.Reason Red
-    elif ruleSet.YellowLightRule.IsSome && ruleSet.YellowLightRule.Value.Rule businessObject then
-        createRuleResult ruleSet.Description ruleSet.YellowLightRule.Value.Reason Yellow
-    else
-        createRuleResult ruleSet.Description "OK" Green
+let rec checkRuleSet businessObject ruleSet =
+    match ruleSet.Rules with
+    | [] -> createRuleResult ruleSet.Description "OK" Green
+    | head::tail ->
+        match head with
+        | Red rule ->
+            if rule.Rule businessObject then createRuleResult ruleSet.Description rule.Criteria TrafficLight.Red
+            else checkRuleSet businessObject {Description=ruleSet.Description; Rules=tail}
+        | Yellow rule ->
+            if rule.Rule businessObject then createRuleResult ruleSet.Description rule.Criteria TrafficLight.Yellow
+            else checkRuleSet businessObject {Description=ruleSet.Description; Rules=tail}
 
 let checkRulesForBusinessObject businessRules businessObject =
-    List.map (evaluate businessObject) businessRules
+    List.map (checkRuleSet businessObject) businessRules
